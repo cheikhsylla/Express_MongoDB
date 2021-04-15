@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+<%- include('../partials/head.ejs') %> 
+<body>
+    <!-- the nav bar menu  -->
+    <%- include('../partials/nav.ejs') %> 
+      
+    <h4 class="read-book">Here are the books already reading !</h4>
+        <% book.forEach(book => {%>
+            <div class="book">
+                <p>
+                   <strong> Author:</strong> <%= book.author %> 
+                </p>
+                <p>
+                    <strong> Book's Name:</strong>    <%= book.bookName %> 
+                </p>
+                <p>
+                    <strong> Finished Date:</strong><%= book.finished %> 
+                </p>
+                <button type="submit" class="button-more"> <a href="/book/delete/:<%= book._id %> "> Delete </a></button>                
+            </div>
+            <br>
+        <%})%>
+       
+        <!-- the footer page  -->
+        <%- include('../partials/footer.ejs') %> 
+</body>
+</html>

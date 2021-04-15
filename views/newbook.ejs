@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+<%- include('../partials/head.ejs') %> 
+<body>
+    <!-- the nav bar menu  -->
+    <%- include('../partials/nav.ejs') %> 
+    <form action="/book/create" method="post">
+        <div>
+            <label for="name">Author :</label>
+            <input type="text" id="name" name="author">
+        </div>
+        <div>
+            <label for="mail">Books_name :</label>
+            <input type="text" id="name" name="bookName">
+        </div>
+        <div>
+            <label for="msg">Finished date :</label>
+            <input type="text" id="name" name="finished">
+        </div>
+        <div class="button">
+            <button type="submit">Valider</button>
+        </div>
+    </form>
+
+    
+        <!-- the footer page  -->
+        <%- include('../partials/footer.ejs') %> 
+</body>
+</html>

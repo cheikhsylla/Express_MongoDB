@@ -1,0 +1,116 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: white;
+    color: black;
+  }
+
+
+  /* footer */
+  footer {
+    position:absolute;
+		bottom:0;
+		width:100%;
+		height:60px;   /* Height of the footer */
+		background:black;
+		text-align: center;
+		color: white;
+}
+
+form {
+  /* Uniquement centrer le formulaire sur la page */
+  margin: 0 auto;
+  width: 700px;
+  /* Encadré pour voir les limites du formulaire */
+  padding: 1em;
+  border: 2px solid black;
+  border-radius: 1em;
+  margin-top: 15%;
+}
+form div + div {
+  margin-top: 2em;
+}
+label {
+  /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
+  display: inline-block;
+  width: 120px;
+  text-align: right;
+  background-color: black;
+  color: white;
+}
+.button {
+  /* Pour placer le bouton à la même position que les champs texte */
+  padding-left: 90px; /* même taille que les étiquettes */
+}
+
+button {
+  /* Cette marge supplémentaire représente grosso modo le même espace que celui
+     entre les étiquettes et les champs texte */
+  margin-left: 6em;
+  color:white;
+  background-color: blue;
+}
+.read-book{
+  text-align: center;
+  color: black;
+  text-decoration: black;
+  text-transform: capitalize;
+  text-decoration: underline;
+  
+}
+
+.book{
+  width: 500px;
+  background-color:blue;
+  border: white;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.book p {
+  color:white;
+  text-align: center;
+  
+  display: inline-block;
+  
+  
+}
+.book strong {
+  text-decoration: underline;
+  display: inline-block;
+  text-align: right;
+}
+
+.button-more{
+  color:blue;
+  background:white;
+  border-radius: 50%;
+  text-transform: capitalize;
+  border: 2px solid blue;
+  
+}
+
+.button-more:hover{
+  background:chartreuse;
+  color: white;
+}
+
